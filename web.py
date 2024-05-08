@@ -9,7 +9,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-Type', 'text/plain; charset=utf-8')
             self.end_headers()
-            self.wfile.write(bytes("StepProject_DAN_IT", "UTF-8"))
+            self.wfile.write(bytes("Step_DAN_IT", "UTF-8"))
         if self.path == '/':
             self.send_response(200)
             self.send_header('Content-Type', 'text/plain; charset=utf-8')
